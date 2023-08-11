@@ -1,0 +1,75 @@
+git commands
+
+git init 			initialize it with git repo
+git add .			to take code from working directory to staging
+git add fileName		to take only one code from working to staging
+git commit -m"msg"		commit to take code from staging to local repo
+git branch -M main		to create the branch
+git remote add origin https://github.com.arina253/gitZorbaF.git
+-to connect local with remote repo (one time activity and different for every user
+git push u origin main		pushing code from local to remote
+git pull -m origin main		pulling code from remote to local branch
+git branch			to check the total number of branches and which one    is current branch
+git branch branchName		to create a new branch
+git checkout branchName		to switch branch
+git log  			to check latest commit
+git branchName -D branchName	to delete branch
+
+
+Process
+Basic Branching System
+
+Command prompt
+
+C:\Users\joshi\Onedrive\Desktop> mkdir gitZorbaF
+C:\Users\joshi\Onedrive\Desktop> cd gitZorbaF
+C:\Users\joshi\Onedrive\Desktop\GITZorbaF> git .code
+
+Visual studio open  --------two files created---commands.txt and info.txt
+Write something in info.txt and save
+
+
+C:\Users\joshi\Onedrive\Desktop\GITZorbaF>git init ------> git commit -m"added"
+Open git hub.login and create a new repository named gitZorbaF
+Copy and paste last three code.
+git branch -M main
+git remote add origin https://github.com.arina253/gitZorbaF.git
+git push u origin main
+Now, we can see the code in remote repo
+
+If made some changes in the remote repo,then need to pull changes via request pull icon
+git pull -m origin main
+We can see code changes in local repo
+
+NOTE:
+We shouldn't touch the local main branch directly.
+From local main,we will create other branch,work on it and push our local repo
+At github,merge your code from remote repo to main branch and pull it again so that we have updated code.
+
+git branch
+git branch branchName, eg.git branch A
+git branch- to check the current branch
+git checkout A- to switch to branch A
+Make/Write some changes in local repo
+git add .
+git commit -m"changes from A branch"
+git push origin A ----- transfer complete branch from local to repo
+
+git log - to check last commit
+pull request from git hub
+Merge
+Delete branch A from local repo
+
+git checkout main ----inorder to delete branch A,come to the main branch first
+git branch -D A
+git branch-----to check the branch if the A branch is deleted
+
+Local needs to be updated with recent changes
+git pull origin main------update code in local repo
+
+
+
+
+
+
+
